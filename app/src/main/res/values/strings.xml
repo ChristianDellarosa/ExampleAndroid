@@ -15,4 +15,5 @@
     <string name="hintUrl">Introduzca url</string>
     <string name="comentario">Comentario:</string>
     <string name="hintCommentary">Introduzca comentario</string>
+    <string name="type">Tipo:</string>
 </resources>
