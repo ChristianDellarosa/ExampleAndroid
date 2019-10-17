@@ -1,5 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent" android:layout_height="match_parent">
 
     <LinearLayout
@@ -36,6 +38,31 @@
             android:inputType="text"
             android:ems="20"/>
 
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/tv_type"
+                android:layout_width="77dp"
+                android:layout_height="40dp"
+                android:padding="10dp"
+                android:text="@string/type"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <Spinner
+                android:id="@+id/spn_type"
+                android:layout_width="254dp"
+                android:layout_height="33dp"
+                android:layout_marginStart="32dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/tv_type"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.571" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
         <TextView
             android:id="@+id/tv_phone"
             android:layout_width="match_parent"
@@ -69,17 +96,17 @@
         <TextView
             android:id="@+id/tv_commentary"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="@string/comentario"
-            android:padding="10dp"/>
+            android:layout_height="72dp"
+            android:padding="10dp"
+            android:text="@string/comentario" />
 
         <EditText
             android:id="@+id/et_commentary"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="163dp"
             android:ems="10"
-            android:inputType="textLongMessage"
-            android:hint="@string/hintCommentary" />
+            android:hint="@string/hintCommentary"
+            android:inputType="textLongMessage" />
 
     </LinearLayout>
 </androidx.core.widget.NestedScrollView>
