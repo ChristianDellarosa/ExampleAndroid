@@ -13,7 +13,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:gravity="center"
-    android:padding="30dp"
+    android:padding="@dimen/margin_buttons"
     tools:context=".ScrollingActivity"
     tools:showIn="@layout/activity_scrolling">
 
