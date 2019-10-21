@@ -1,8 +1,8 @@
 <resources>
-
     <!-- Base application theme. -->
     <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
         <!-- Customize your theme here. -->
+        <item name="android:typeface">serif</item>
         <item name="colorPrimary">@color/colorPrimary</item>
         <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
         <item name="colorAccent">@color/colorAccent</item>
@@ -22,4 +22,14 @@
         <item name="android:backgroundTint">@android:color/holo_blue_dark</item>
     </style>
 
+    <style name="EstiloBoton" parent="@android:style/TextAppearance.Small">
+        <item name="android:textColor">@color/rojo</item>
+        <item name="android:typeface">monospace</item>
+        <item name="android:backgroundTint">#33e0ff</item>
+    </style>
+
+    <style name="EstiloBoton.textoGrande">
+        <item name="android:textSize">20pt</item>
+        <item name="android:textColor">@color/colorPrimaryDark</item>
+    </style>
 </resources>
