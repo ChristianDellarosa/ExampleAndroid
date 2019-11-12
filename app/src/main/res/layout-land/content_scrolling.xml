@@ -43,7 +43,8 @@
             <Button android:id="@+id/btn_salir"
                 android:layout_height="wrap_content"
                 android:layout_width="match_parent"
-                android:text="@string/Salir"/>
+                android:text="@string/Salir"
+                android:onClick="salir"/>
         </TableRow>
     </TableLayout>
 </LinearLayout>

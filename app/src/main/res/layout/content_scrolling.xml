@@ -43,6 +43,7 @@
             android:id="@+id/btn_salir"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="@string/Salir" />
+            android:text="@string/Salir"
+            android:onClick="salir"/>
     </LinearLayout>
 </androidx.core.widget.NestedScrollView>
