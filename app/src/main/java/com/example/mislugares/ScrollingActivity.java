@@ -1,5 +1,6 @@
 package com.example.mislugares;
 
+import android.content.Intent;
 import android.os.Bundle;
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
 import com.google.android.material.snackbar.Snackbar;
@@ -12,6 +13,7 @@ import android.widget.Button;
 
 public class ScrollingActivity extends AppCompatActivity {
 
+    private Button btnAcercaDe;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -27,7 +29,15 @@ public class ScrollingActivity extends AppCompatActivity {
                         .setAction("Action", null).show();
             }
         });
+
+        btnAcercaDe = findViewById(R.id.btn_acercaDe);
+        btnAcercaDe.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View view) {
+                lanzarEdicionLugar(null);
+            }
+        });
     }
+
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
@@ -53,5 +63,10 @@ public class ScrollingActivity extends AppCompatActivity {
     public void salir(View view) {
         finish();
         System.exit(0);
+    }
+
+    public void lanzarEdicionLugar(View view){
+        Intent i = new Intent(this, EdicionLugarActivity.class);
+        startActivity(i);
     }
 }
